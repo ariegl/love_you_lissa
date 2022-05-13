@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <title>I love you my Lissa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="bg-music" src="media/cancion.mp3" autoplay></audio>
+    <div class="container">
+        <div class="container-primary">
+            <h1 id="first-text" class="">I LOVE YOU</h1>
+            <h2 id="second-text" class="">MY LISSA</h2>
+            <input id="btn-play" class="btn" type="button" value="❤️">
+        </div>
+        <img src="img/wallpaper.jpg" alt="">
+    </div>
+
+    <script>
+        var btnPlay = document.querySelector('#btn-play');
+        var music = document.querySelector('#bg-music');
+        var firstTxt = document.querySelector('#first-text');
+        var secondTxt = document.querySelector('#second-text');
+
+        btnPlay.addEventListener('click', function(){
+                console.log("se dio click");
+                music.play();
+                firstTxt.classList.add('txt-brightness');
+                secondTxt.classList.add('txt-brightness');
+        });
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
