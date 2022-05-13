@@ -92,5 +92,25 @@ h2{
         object-fit:cover;
         height:100%;
     }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size:25px;
+    }
+
+    .btn{
+        font-size:25px;
+    }
+
+    .btn:hover{
+        font-size:35px;
+    }
+    
+    .btn:active{
+        font-size:50px;
+    }
 }
 
