@@ -25,12 +25,25 @@
         var firstTxt = document.querySelector('#first-text');
         var secondTxt = document.querySelector('#second-text');
 
+        let musicStatus = false;
+
         btnPlay.addEventListener('click', function(){
-                console.log("se dio click");
+            if(musicStatus == false){
                 music.play();
+
                 firstTxt.classList.add('txt-brightness');
                 secondTxt.classList.add('txt-brightness');
+                musicStatus = true;
+            }else{
+                music.pause();
+
+                firstTxt.classList.remove('txt-brightness');
+                secondTxt.classList.remove('txt-brightness');
+                
+                musicStatus = false;
+            }
         });
+
     </script>
     <script src="js/jquery-3.6.0.min.js"></script>
 </body>
